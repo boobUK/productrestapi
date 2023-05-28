@@ -11,11 +11,8 @@ public class ProductCasheConfig {
 
 	@Bean
 	Config cashConfig() {
-		return new Config()
-				.setInstanceName("product-config")
-				.addMapConfig(new MapConfig()
-						.setName("product-cashe")
-						.setTimeToLiveSeconds(3000));
+		return new Config().setInstanceName("product-config")
+				.addMapConfig(new MapConfig().setName("product-cashe").setTimeToLiveSeconds(3000));
 	}
-	
+
 }
